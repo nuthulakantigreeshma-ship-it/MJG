@@ -1,0 +1,649 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.logo{
+    background-color:whitesmoke ;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+    border: orangered 5px solid;
+    border-bottom-right-radius: 120px;
+    padding-right:  100px;
+    border-top: 0;
+    border-left: 0;
+    font-size: 19px ;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:600;
+    margin-left: 0;
+}
+.logo img{
+    width: 60px;
+    height:60px;
+}
+.nav-container{
+    display: flex;
+    background-color: #2c3e50;
+    justify-content:space-between;
+    align-items: center;
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    max-width: 100%;
+}
+body{
+    padding-top: 100px;
+    
+}
+.serives-container ul{
+    display:flex;
+    gap: 20px;
+    list-style: none;
+    margin-right: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    align-items: center;
+    font-weight: bold;
+}
+.serives-container ul li a{
+    text-decoration: none;
+    color: white;
+}
+.serives-container ul li a:hover{
+    color: #ef6634;
+    cursor: pointer; 
+} 
+.serives-container button{
+    background-image:linear-gradient(to right,#ff6b35,#fc8e67);
+    padding: 15px;
+    border-radius: 12PX;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:small;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: ease-out 0.2s;
+}
+.serives-container button:hover{
+    box-shadow: 0px 0px 10px 2px #fa875e;
+    margin-bottom: 10px;
+}
+.home-page{
+    padding: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    background-image:url(" https://st.depositphotos.com/1002076/3032/i/450/depositphotos_30327079-stock-photo-steam-boiler.jpg" );
+    background-repeat: no-repeat;
+    background-size: cover;  
+    padding-bottom: 140px;
+}
+.home-page h1{
+    font-size: 50px;
+    font-weight:800;
+    color: white;
+}
+.home-page span{
+    color:#fa875e;
+}
+.home-page .Electric img{
+    width: 420px;
+    height: 450px;
+    margin-top:-70px;
+}
+.home-page p{
+    color: white;
+    font-size: medium;
+    font-weight:bold;
+    padding: 25px;
+
+}
+ #info{
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+    color:white;
+    font-size: 15px;
+    border-radius: 10px;
+    border: solid 2px white;
+    cursor: pointer;
+}
+#info:hover{
+    background: white;
+    color: black;
+}
+#num{
+    background-image: linear-gradient(to right,#ef6634,#f78c65);
+    background-color: #ef6634;
+    padding: 16px 30px 16px 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: ease-out 1s;
+}
+#num:hover{
+    position: relative;
+    bottom:10px;
+    box-shadow: 0px 0px 10px 2px #ef6634;   
+}
+.home-page-logo{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+#comp-logo{
+    width: 200px;
+    height: 200px;
+}
+#comp-prod{
+    width: 450px;
+    height: 90px;
+    padding: 50px;
+}
+.services{
+    color: #183048;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-content: center;
+    background: whitesmoke;
+    font-weight: 600;
+}
+.ser-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+        padding: 50px;
+}
+.ser-heading h1{
+    font-size:40px;
+}
+.ser-card{
+    background: rgb(255, 255, 255);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow:0px 0px 10px 1px  #bfdbf6;
+    width: 330px;
+}
+.ser-card h2{
+    margin-top: 25px;
+    margin-bottom: 20px;
+} 
+.ser-card ul{
+    margin-left: 10px;
+}
+.ser-card li{
+    margin-bottom: 20px;
+    color: #2a445e;
+    font-weight: 200;
+    padding-left: 25px; 
+    position: relative;
+    list-style: none;
+}
+.ser-card li::before{
+    content: '✓';
+    color: rgb(107, 220, 107);
+    font-size: 20px                                                     ;
+    font-weight: bold;
+    position: absolute;
+    left:0;
+}
+.ser-card button{
+    margin-top: 50px;
+    font-size: 15px;
+    color: #183048;
+    border: #183048 solid 2px;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    font-weight: 600;
+}
+.ser-card button .bi{
+    margin-left: 17px;
+}
+.ser-card button:hover{
+    background: #183048;
+    color: white;
+}
+.ser-icon{
+    font-size: 30px;
+    background: #183048;
+    color: white;
+    padding:15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.repai-card{
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow:0px 0px 10px 1px  #bfdbf6;  
+    width: 300px;
+}
+.tools-icon{
+    font-size: 30px;
+    background:#183048;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.repai-card h2{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.repai-card li{
+    list-style: none;
+    margin-bottom: 20px;
+    font-weight: 200;
+    position: relative;
+    color: #2a445e;
+    padding-left: 25px; 
+}
+.repai-card li::before{
+    content:'✓' ;
+    color: rgb(107, 220, 107);
+    font-size: 20px;
+    font-weight: bold;
+    position:absolute;
+    left:0px;
+}
+.repai-card button{
+    font-size: 15px;
+    color: #183048;
+    border: #183048 solid 2px;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    margin-top: 150px;
+    font-weight: 600;
+}
+.repai-card button .bi{
+    margin-left: 17px;
+}
+.repai-card button:hover{
+    background: #183048;
+    color: white;
+}
+.shield-card{
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow:0px 0px 10px 1px  #bfdbf6;
+    width: 300px;
+}
+.shield-icon{
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+    background: #183048;
+    border-radius: 10px;
+    display: inline-block;
+}
+.shield-card h2{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.shield-card p{
+    color: #2a445e;
+    font-weight: 200;
+    line-height: 30px;
+}
+.shield-card button{
+    font-size: 15px;
+    color: #183048;
+    border: #183048 solid 2px;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    margin-top: 100px;
+    font-weight: 600;
+}
+.shield-card button .bi{
+    margin-left: 17px;
+}
+.shield-card button:hover{
+    background: #183048;
+    color: white;
+}
+.cards{
+    display: flex;
+    gap: 50px;
+    justify-content: center; 
+    padding: 80px;
+}
+.container{
+    text-align: center;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.container h1{
+    font-family:Arial, Helvetica, sans-serif;
+    color: #183048;
+    margin-bottom: 20px;
+}
+.container p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2a445e;
+    margin-bottom: 35px;
+    font-size: large;
+}
+.container button{
+    background: #ef6634;
+    padding: 15px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    background: linear-gradient(to right, #ef6634, #f18963);
+}
+.container button .bi{
+    margin-right: 20px;
+}
+.panel-ser{
+    background: #183048;
+    color: white;
+    display: inline-block;
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px  #33608c;
+    justify-content: center;
+
+}
+.panel-ser h2{
+    margin-bottom: 25px;
+}
+.flask-icon{
+    background: #2a445e;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    line-height: 25px;
+    width: 250px;
+    text-align: center;
+}
+.bi-flask-fill{
+    color:black;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.bowl-icon{
+    background: #2a445e;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    line-height: 25px;
+    width: 250px;
+    text-align: center;
+}
+.bowl-icon img{
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+.container-ser{
+    display: flex;
+    padding: 100px;
+    justify-content:space-around;
+    border-bottom: #1e4770 1px solid;
+}
+.brands{
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.brands h1{ 
+    color: #183048;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.brands p{
+    font-size: 23px;
+    background: #9ec1ce;
+    border-radius: 10px;
+    padding: 23px;
+    border: 2px solid #33608c;
+    width: 82%;
+    margin: auto;    
+}
+.brand-names img{
+    width: 180px;
+    height: 40px;
+    border: solid 1px black ;
+    padding: 13px 55px;
+    margin-top: 40px;
+}
+.brand-names{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.label{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(53, 45, 45);
+    position:absolute;
+    padding: 5px 10px;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+}
+.logo-con{
+    position: relative;
+    display: inline-block;
+}
+.other{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #183048;
+    padding: 20px;
+    text-align: center;
+}
+.note{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(246, 206, 213);
+    text-align: center;
+    padding: 30px;
+    width: 85%;
+    margin: auto;
+    border-radius: 15px;
+    border-left: #ef6634 solid 6px;
+}
+.bnd{
+    padding: 100px 10px;
+}
+.service-area{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #183048;
+    text-align: center;
+    padding: 100px;
+    background-color:whitesmoke;
+}
+.service-area p{
+    background-color: white;
+    padding: 30px 50px;
+    border-radius: 10px;
+    width: 30%;
+    margin: auto;
+    line-height: 30px;
+    margin-top: 30px;
+    border-left: #ef6634 solid 6px;
+}
+.service-request{
+    background-color: #183048;
+    padding: 100px 30px;
+    text-align: center;
+}
+.service-request h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.row{
+    display: flex;
+    gap:20px;
+}
+.input{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+textarea {
+    width:97%;
+    height: 100px;
+
+}
+textarea{
+    border: solid 2px rgb(129, 156, 237);
+    border-radius: 10px;
+    padding: 18px;
+    font-size: 15px;
+    outline: none;
+    margin-bottom: 19px;
+}
+textarea:focus{
+    border: solid 2px rgb(240, 75, 75);
+    box-shadow: 0 0 5px rgb(240, 75, 75);
+
+}
+input{
+    border: solid 2px rgb(129, 156, 237);
+    border-radius: 10px;
+    padding: 18px;
+    font-size: 15px;
+    outline: none;
+}
+input:focus{
+    border: solid 2px rgb(240, 75, 75);
+    box-shadow: 0 0 5px rgb(240, 75, 75);
+
+}
+.ser-form{
+    background-color: whitesmoke;
+    width: 80%;
+    padding: 35px;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+}
+.terms{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #183048;
+    text-align: left;
+}
+.list-of-terms{
+    padding: 15px 30px;
+    line-height: 30px;
+}
+.submit-button button{
+   color: white;
+   background-color: #ef6634;
+   border-radius: 5px;
+   padding: 10px;
+   width: 100%;
+   border: none;
+   font-size: medium;
+}
+.footer{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(1, 25, 55, 0.98);
+    color: white;
+    padding: 70px 90px;
+    
+}
+.footer-page{
+    display: flex;
+    justify-content: space-between;
+}
+.mjg h2,
+.mjg h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.mjg p{
+    line-height: 1.6;
+    max-width: 350px;
+}
+.mjg ul{
+    list-style: none;
+    padding: 0;
+}
+.mjg ul li a{
+    color: white;
+    text-decoration: none;
+}
+.mjg ul li a:hover{
+    color: #ef6634;
+    cursor: pointer;  
+}
+.footer-page ul li{
+    margin-bottom: 10px;
+}
+.contact-box {
+    background: #ffffff;
+    color: #000000;
+    padding: 25px;
+    border-left: 7px solid #f79c1d;
+    border-radius: 8px;
+    width: 280px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+.contact-box .bi-telephone-fill,
+.bi-envelope-fill, .bi-house-door-fill{
+    color:#ef6634;
+    margin-right: 10px;
+}
+.footer-bottom{
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin-top: 40px;
+    padding-top: 30px;
+    font-size: 18px;
+}
+@media (max-width: 768px){
+    .footer-page{
+        flex-direction: column;
+    }
+    .footer-contact{
+        width: 100%;
+    }
+}
+#HOME,
+#OUR-SER,
+#BRAND,
+#SER-AREA,
+#SER-REQUEST{
+    scroll-margin-top: 100px;  
+}
+
+input[type="checkbox"]{
+  width: 20px; 
+  height: 20px; 
+}
+
+@media (max-width: 768px) {
+    .nav-container{
+        max-width: 720px;
+    }
+}
+    
