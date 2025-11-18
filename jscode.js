@@ -1,8 +1,9 @@
-let menuicon = document.querySelector(".servies-container");
-  document.getElementsByClassName("menuicon").addEventListener("click", () => {
-    if (menuicon) {
-      menuicon.classList.toggle("showData");
-    } else {
-      console.error("Element not found!");
-    }
-  });
+let menu = document.getElementById("menulist");
+
+function shownav() {
+  if (menu.style.display === "none" || menu.style.display === "") {
+    menu.style.display = "block";
+  } else {
+    menu.style.display = "none";
+  }
+}

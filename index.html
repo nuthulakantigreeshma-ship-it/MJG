@@ -17,8 +17,8 @@
                 <img src="https://www.steamgeneratorrepairs.com/images/BoilerMike.png">
                <p>MJG SOLUTIONS LLC</p>
             </div>
-            <div class="serives-container">
-                    <ul>
+            <div class="serives-container" id="menulist" >
+                    <ul >
                         <li><a href="#HOME">HOME</a></li>
                         <li><a href="#OUR-SER">OUR SERVICES</a></li>
                         <li><a href="#BRAND">BRANDS</a></li>
@@ -26,12 +26,10 @@
                         <li><button><a href="#SER-REQUEST">SERVICE REQUEST</a></button></li>
                     </ul>
             </div>
-            <div class="menuicon">
-                <i class="fa-solid fa-bars" onclick="show()"></i>
-            </div>
-               
+            <div class="menuicon" id="menuicon" onclick="shownav()" >
+                <i class="fa-solid fa-bars"></i>
+            </div>       
         </div>
-       
 
         <div id="HOME">
                 <div class="home-page">
@@ -41,7 +39,7 @@
                         <button id="num"><i class="bi bi-telephone-fill"></i>CALL US (516) 319-5052</button>
                         <button id="info"><i class="bi bi-envelope-fill"></i>INFO@STEAMGENERATORREPAIRS.COM</button>
                     </div>    
-                            <div class="Electric">
+                            <div class="Electric" >
                                 <img src="https://www.steamgeneratorrepairs.com/images/LB-100-240-transparent.png">
                             </div>
                 </div>
@@ -99,7 +97,7 @@
                 <p>Prompt Emergency Service at Your Facility</p>
                 <button><i class="bi bi-telephone-fill"></i>CALL US (516) 319-5052</button>
             </div>
-                <div class="panel-ser">
+                <div class="panel-ser" id="panel">
                         <h3>Steam Generator Field Services</h3>
                         <div class="flask-icon">
                             <i class="bi bi-flask-fill"></i>
@@ -196,6 +194,7 @@
                 </div>
             </form>
         </section>
+    </body>
         <footer class="footer">
             <div class="footer-page">
                 <div class="mjg">
@@ -227,10 +226,10 @@
                     </div>
                 </div>
             </div>
+            <script src="jscode.js"></script>
             <div class="footer-bottom">
                 <span>© 2025 MJG Solutions LLC. All rights reserved.</span>
             </div>    
         </footer>
-        <script src="jscode.js"></script>
-    </body>
+        
 </html>
